@@ -1,0 +1,288 @@
+/* تنسيقات عامة وخلفية الموقع الدافئة */
+:host {
+  display: block;
+  background-color: #f7f4f0;
+  font-family: 'Cairo', sans-serif;
+  color: #4a4242;
+  direction: rtl;
+  min-height: 100vh;
+}
+
+.studio-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* شريط التنقل العلوي */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-bottom: 1px solid #e8e1dc;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6b5b5b;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #9b7ea4;
+}
+
+.nav-logo img {
+  height: 40px;
+  object-fit: contain;
+}
+
+/* القسم الرئيسي (الهيرو) */
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-logo-wrapper {
+  margin-bottom: 20px;
+}
+
+.main-logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.hero-title {
+  font-size: 38px;
+  color: #3b3030;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #8c7b7b;
+  letter-spacing: 1px;
+}
+
+/* قسم الباقات */
+.packages-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 28px;
+  color: #3b3030;
+  margin-bottom: 5px;
+}
+
+.section-header p {
+  color: #8c7b7b;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+
+/* شبكة البطاقات */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 15px;
+  align-items:stretch;
+}
+
+/* تصميم البطاقة الفردية */
+.package-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #eee6e0;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height:100%;
+  box-sizing:border-box ;
+  
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.package-card.featured {
+  border-color: #b39bc8;
+}
+
+.package-name {
+  font-size: 18px;
+  color: #554848;
+  margin-bottom: 15px;
+}
+
+.package-price {
+  margin-bottom: 25px;
+}
+
+.amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #3b3030;
+}
+
+.currency {
+  font-size: 13px;
+  color: #8c7b7b;
+  margin-right: 5px;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid #f4f0ec;
+  padding-top: 20px;
+  flex-grow: 1;
+}
+
+.package-features li {
+  font-size: 13px;
+  color: #6b5b5b;
+  margin-bottom: 12px;
+  position: relative;
+  padding-right: 15px;
+}
+
+.package-features li::before {
+  content: "•";
+  color: #b39bc8;
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+/* زر الحجز */
+.book-btn {
+  background-color: #b39bc8;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-family: 'Cairo', sans-serif;
+  margin-top: auto;
+}
+
+.book-btn:hover {
+  background-color: #9b7ea4;
+}
+
+/* تذييل الصفحة */
+.site-footer {
+  text-align: center;
+  padding: 50px 0 30px 0;
+  border-top: 1px solid #e8e1dc;
+  margin-top: 50px;
+}
+
+.footer-logo {
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  opacity: 0.8;
+}
+
+.footer-note {
+  font-size: 13px;
+  color: #8c7b7b;
+}
+
+ .booking-section {
+  padding: 50px 20px;
+  background-color: #fdfbfb;
+  direction: rtl;
+}
+
+.booking-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.booking-container h2 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.booking-container p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d4a373;
+}
+
+.submit-booking-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-booking-btn:hover {
+  background-color: #1ebd56;
+}

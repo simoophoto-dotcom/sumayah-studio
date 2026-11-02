@@ -1,0 +1,214 @@
+<div class="studio-container">
+  <!-- شريط التنقل العلوي -->
+  <nav class="navbar">
+    <div class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#packages">الباقات</a>
+      <a href="#contact">تواصل معنا</a>
+    </div>
+    <div class="nav-logo">
+      <img src="6DF43DDE-BE80-4A33-A232-908423D21298.png" alt="Sumayah Studio Logo">
+    </div>
+  </nav>
+
+  <!-- القسم الرئيسي (الهيرو) مع الشعار والعنوان -->
+  <header id="home" class="hero-section">
+    <div class="hero-logo-wrapper">
+      <img src="6DF43DDE-BE80-4A33-A232-908423D21298.png" alt="شعار سمية استوديو" class="main-logo">
+    </div>
+    <h1 class="hero-title">باقات وأسعار التصوير</h1>
+    <p class="hero-subtitle">نخلد أجمل لحظاتكم بأرقى تفاصيل الاحترافية</p>
+  </header>
+
+  <!-- قسم باقات ( مصورة واحدة ) -->
+  <section id="packages" class="packages-section">
+    <div class="section-header">
+      <h2>باقات ( مصورة واحدة )</h2>
+    </div>
+
+    <div class="packages-grid">
+      <!-- تصوير ساعتين -->
+      <div class="package-card">
+        <h3 class="package-name">تصوير ساعتين</h3>
+        <div class="package-price"><span class="amount">٥٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تغطية بالهاتف فقط</li>
+          <li>تصوير المعاريس فقط</li>
+          <li>تسليم جميع الصور والتغطيات عن طريق الواتساب</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ساعتين')"> هذه الباقة ←</button>
+      </div>
+
+      <!-- تصوير 4 ساعات -->
+      <div class="package-card">
+        <h3 class="package-name">تصوير ٤ ساعات</h3>
+        <div class="package-price"><span class="amount">٩٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تصوير العرسان</li>
+          <li>فريست لوك</li>
+          <li>دخلة هاتف</li>
+          <li>دخلة العروس + الأمل</li>
+          <li>تسليم الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ٤ ساعات')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- تصوير 6 ساعات (عامل المونتاج) -->
+      <div class="package-card">
+        <span class="badge">عامل المونتاج</span>
+        <h3 class="package-name">تصوير ٦ ساعات</h3>
+        <div class="package-price"><span class="amount">١٤٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تغطية بالهاتف</li>
+          <li>تصوير المعاريس + الأمل</li>
+          <li>دخلة المعرس والعروس + فريست لوك</li>
+          <li>تصوير مونتاج بالكاميرا مع التصميم</li>
+          <li>تسليم جميع الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ٦ ساعات')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- باقة 4 ساعات + ألبوم -->
+      <div class="package-card">
+        <h3 class="package-name">باقة ٤ ساعات + ألبوم</h3>
+        <div class="package-price"><span class="amount">١٥٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تصوير تغطية بالهاتف للتنظيم والتفاصيل</li>
+          <li>تصوير العرسان + فريست لوك</li>
+          <li>دخلة العروس + الأمل</li>
+          <li>تصميم ألبوم مقاس ١٠×١٥</li>
+          <li>تسليم جميع الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('باقة ٤ ساعات + ألبوم')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- باقة 5 ساعات + ألبومين -->
+      <div class="package-card">
+        <h3 class="package-name">باقة ٥ ساعات + ألبومين</h3>
+        <div class="package-price"><span class="amount">١٨٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تغطية بالهاتف للتنظيم والتفاصيل</li>
+          <li>تصوير العرسان + دخلة العرسان</li>
+          <li>تصوير الأمل + فريست لوك</li>
+          <li>تصميم ألبومين مقاس ١٠×١٥ و ٨×٦</li>
+          <li>تسليم جميع الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('باقة ٥ ساعات + ألبومين')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- باقة 6 ساعات + فيديو (الباقة الشاملة) -->
+      <div class="package-card featured">
+        <span class="badge">الباقة الشاملة</span>
+        <h3 class="package-name">باقة ٦ ساعات + فيديو</h3>
+        <div class="package-price"><span class="amount">٢٠٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>تغطية بالهاتف للتنظيم والتفاصيل</li>
+          <li>تصوير العرسان + الدخلة + الأمل + فريست لوك</li>
+          <li>تصميم فيديو ممتع للعرسان</li>
+          <li>تصميم ألبومين مقاس ١٠×١٥ و ٨×٦</li>
+          <li>تسليم جميع الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('باقة ٦ ساعات + فيديو')">احجزي هذه الباقة ←</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم باقات ( مصورتين - هاتف + كاميرا ) -->
+  <section class="packages-section">
+    <div class="section-header">
+      <h2>باقات ( مصورتين - هاتف + كاميرا )</h2>
+    </div>
+
+    <div class="packages-grid">
+      <!-- تصوير 3 ساعات -->
+      <div class="package-card">
+        <h3 class="package-name">تصوير ٣ ساعات</h3>
+        <div class="package-price"><span class="amount">٩٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>مصورتين (هاتف + كاميرا)</li>
+          <li>تصوير العرسان صور + فيديو</li>
+          <li>تسليم جميع الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ٣ ساعات (مصورتين)')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- تصوير 4 ساعات + ألبوم -->
+      <div class="package-card">
+        <h3 class="package-name">تصوير ٤ ساعات + ألبوم</h3>
+        <div class="package-price"><span class="amount">١٧٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>مصورتين (هاتف + كاميرا)</li>
+          <li>تصوير العرسان صور + فيديو</li>
+          <li>ألبوم مقاس ٨×٦</li>
+          <li>تسليم الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ٤ ساعات + ألبوم (مصورتين)')">احجزي هذه الباقة ←</button>
+      </div>
+
+      <!-- تصوير 5 ساعات + ألبوم -->
+      <div class="package-card">
+        <h3 class="package-name">تصوير ٥ ساعات + ألبوم</h3>
+        <div class="package-price"><span class="amount">٢٠٠</span> <span class="currency">ريال عماني</span></div>
+        <ul class="package-features">
+          <li>مصورتين (هاتف + كاميرا)</li>
+          <li>تصوير العرسان صور + فيديو</li>
+          <li>ألبوم مقاس ١٠×١٥</li>
+          <li>تسليم الصور في فلاش</li>
+        </ul>
+        <button class="book-btn" (click)="bookPackage('تصوير ٥ ساعات + ألبوم (مصورتين)')">احجزي هذه الباقة ←</button>
+      </div>
+    </div>
+  </section>
+     
+    <section id="booking-section" class="booking-section">
+      <div class="booking-container">
+        <h2>إجراءات الحجز والتأكيد</h2>
+        <p>يرجى تعبئة البيانات التالية لإتمام حجز الباقة المختارة</p>
+
+        <form class="booking-form" (submit)="sendToWhatsApp($event)">
+
+          <div class="form-group">
+            <label for="fullName">الاسم الكامل</label>
+            <input type="text" id="fullName" placeholder="أدخلي اسمكِ الكامل" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" placeholder="example@domain.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">رقم الهاتف (الواتساب)</label>
+            <input type="tel" id="phone" placeholder="968XXXXXXXX+" required>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDate">تاريخ المناسبة / التصوير</label>
+            <input type="date" id="eventDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">ملاحظات أو تفاصيل إضافية</label>
+            <textarea id="notes" rows="3" placeholder="أكري أي تفاصيل حابة نركز عليها..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-booking-btn">تأكيد إرسال الطلب ✨</button>
+        </form>
+      </div>
+    </section>
+ 
+
+  <!-- تذييل الصفحة -->
+  <footer id="contact" class="site-footer">
+    <div class="footer-note-box">
+      <strong>ملاحظة عامة:</strong> الحجز داخل ولايتي صحار وصحم بدون رسوم إضافية. يتطلب الحجز خارج ولايتي صحار وصحم إضافة عمولة نقل / رسوم إضافية.
+    </div>
+    <div class="contact-info">
+      <p>الإنستجرام: Ph_to22@ | الواتساب / للتواصل والطلب: 92250595 / 97088082</p>
+    </div>
+    <div class="footer-logo-wrapper">
+      <img src="6DF43DDE-BE80-4A33-A232-908423D21298.png" alt="شعار سمية استوديو" class="footer-logo">
+    </div>
+    <p class="studio-sign">استوديو تصوير المناسبات والأعراس</p>
+  </footer>
+</div>
